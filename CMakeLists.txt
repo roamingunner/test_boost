@@ -13,9 +13,7 @@ include(doxygen)
 include(tools)
 #include(dependency-graph)
 
-include_directories(/home/leo/work/boost_1_74_0/install/include)
-include_directories(include_directories(${PROJECT_SOURCE_DIR}/external/dbg-macro))
-include_directories(include_directories(${PROJECT_SOURCE_DIR}/external/CLI11))
+
 
 # Require C++11
 cxx_11()
@@ -24,3 +22,4 @@ cxx_11()
 build_docs(PROCESS_DOXYFILE TARGET_NAME doc DOXYFILE_PATH Doxyfile.in)
 
 add_subdirectory(asio/chat)
+add_subdirectory(program_options)
