@@ -1,0 +1,5 @@
+find_package(Boost REQUIRED COMPONENTS unit_test_framework)
+add_executable(unit_test_example_01 unit_test_example_01.cpp)
+target_link_libraries(unit_test_example_01 Boost::unit_test_framework)
+add_executable(sample sample.cpp)
+target_link_libraries(sample Boost::unit_test_framework)

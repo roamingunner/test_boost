@@ -23,3 +23,4 @@ build_docs(PROCESS_DOXYFILE TARGET_NAME doc DOXYFILE_PATH Doxyfile.in)
 
 add_subdirectory(asio/chat)
 add_subdirectory(program_options)
+add_subdirectory(test)
